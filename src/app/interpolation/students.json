@@ -1,0 +1,17 @@
+[
+    {
+        "id": "std-1",
+        "name": "A",
+        "gender": "Male"
+    },
+    {
+        "id": "std-2",
+        "name": "B",
+        "gender": "Female"
+    },
+    {
+        "id": "std-3",
+        "name": "C",
+        "gender": "Female"
+    }
+]

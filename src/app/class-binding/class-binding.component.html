@@ -1,0 +1,51 @@
+<p>class-binding works!</p>
+
+<!--Old css format-->
+<div>
+  <p>Old css format</p>
+  <input type="text" name="oldcssformat" class="three two one">
+</div>
+
+<div>
+  <p>FirstName :</p>
+  <input [ngClass]="'two'" type="text" name="FirstName" />
+</div>
+<div>
+    <p>LastName :</p>
+  <input [ngClass]="'one'" type="text" name="LastName" />
+</div>
+<div>
+    <p>MiddleName :</p>
+  <input [ngClass]="isEnable ? 'one' : 'two'" type="text" name="MiddleName" />
+</div>
+
+<div>
+    <p>SecondMiddleName :</p>
+  <input [ngClass]="isEnabletwo ? 'one' : 'two'" type="text" name="SecondMiddleName" />
+</div>
+
+<!----->
+<div>
+    <p>Sur Name</p>
+    <input type="text" name="surname" [class.one]="isEnabletwo">
+</div>
+
+<!----->
+<div>
+    <p>Dumby name</p>
+<input type="text" name="Dumbyname" [ngClass]="['one','two','three']">
+</div>
+
+<!----->
+<div>
+    <p>Testing</p>
+    <input type="text" name="Testing" [class.three]="isEnable && isEnabletwo">
+</div>
+
+<!---->
+<div>
+    <p>Testing 1</p>
+    <input type="text" name="Testing"  [ngClass]="{
+    three: isEnable,two:isTest,one:isEnabletwo
+  }">
+</div>

@@ -1,0 +1,21 @@
+<p>style-binding works!</p>
+<div>
+    <p>Old css syle syntax</p>
+    <input type="text " style="text-align:center;color:blueviolet;height:25px">
+  </div>
+
+  <!--for single style-->
+<h1 [style.color]="'Green'">This is AAAA</h1>
+
+<!---->
+
+<h2 [style.color]="isEnable?'blueviolet':''">Test</h2>
+
+<!---->
+
+<h3 [ngStyle]="{'text-align':'center','color':'red'}">Res</h3>
+
+
+<!---->
+
+<h3 [ngStyle]="myStyles">Testing</h3>

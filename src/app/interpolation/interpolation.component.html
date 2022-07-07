@@ -1,0 +1,28 @@
+<p>interpolation works!</p>
+<div>
+    <h1>Variables</h1>
+    <p>{{Patient_Id}}</p>
+    <p>{{patient_Name}}</p>
+    <p>{{patient_Wardno}}</p>
+</div>
+<div>
+    <h1>Array</h1>
+    <p *ngFor="let x of hospitalBranchLocationDetails,let i = index">
+       {{i}} - {{x}}
+        <br/>
+    </p>
+</div>
+<div>
+    <h1>Object</h1>
+    <p *ngFor="let x of hospitalDetails,let i = index">
+        {{i}} - {{x.patient_ID}}
+        {{i}} - {{x.patientName}}
+        {{i}} - {{x.age}}
+        {{i}} - {{x.addressLine}}
+        {{i}} - {{x.addressLine2}}
+    </p>
+</div>
+<!-- <div>
+    <p>Test</p>
+    {{patientDetails12}}
+</div> -->
